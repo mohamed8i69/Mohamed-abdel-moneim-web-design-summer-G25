@@ -1,0 +1,82 @@
+ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(210, 114, 242, 1) 5%, rgba(111, 90, 229, 1) 94%);
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+tr{
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 2px 6px 20px 2px rgba(0, 0, 0, 0.19);
+}
+td  {
+    width:50%;
+    vertical-align: top;
+    padding: 20px 20px 0;
+      
+}
+
+.contant {
+    background-color: #02b4d2;
+    color: #e8e8e8;
+    text-align: center;
+    padding: 20px;
+}
+
+.contant h2 {
+    margin: 100px 20px 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    
+    
+}
+.contant p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: #fefefe;
+    text-align: center;
+}
+.form h2 {
+    margin: 30px 0 50px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+form input,
+form textarea {
+    background-color: #eee;
+    border: 2px solid transparent;
+    padding: 15px;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+form textarea{
+    min-width: 70%;
+    height: 200px;
+}
+
+.form button {
+    background-color: #02b4d2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin-top: 10px;
+}
