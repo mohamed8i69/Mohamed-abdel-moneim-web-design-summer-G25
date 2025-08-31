@@ -1,0 +1,261 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+
+ header,
+ nav ul,
+ .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+ }
+
+ .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+ }
+
+ .nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+      color: black;
+ }
+
+
+ .logo h2 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    vertical-align: middle;
+ }
+
+ .cart-banner {
+    display: flex;
+    background-image: url(../pictures/1461f3d6ff74c027a1888544144abe4be6e02cbf.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 316px;
+ }
+
+ .cart-banner h1 {
+    font-size: 30px;
+ }
+
+ .cart-banner p span {
+    font-weight: bold;
+ }
+
+ .cart-page {
+    padding: 6%;
+    display: flex;
+    justify-content: space-between;
+    
+ }
+
+ .cart-items {
+    width: 65%;
+    margin-bottom: 20px;
+ }
+
+ .cart-items thead {
+    font-size: 20px;
+    font-weight: bold;
+
+
+ }
+
+ .cart-items thead tr {
+    background-color: #F9F1E7;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 5%;
+ }
+
+ .cart-items tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+
+ }
+
+ .cart-items tbody tr td {
+    /* padding:10px; */
+    text-align: center;
+    width: 20%;
+ }
+
+ .cart-items tbody tr td input {
+    width: 50%;
+ }
+   .cart-items tbody tr td button {
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #B88E2F;
+   }
+.cart-totals{
+    width: 32%; 
+   aspect-ratio: 15/16;
+   background-color: #F9F1E7;
+   padding: 20px;
+   display: flex;
+   text-align: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   padding: 2% 5% 5%;
+}
+.cart-totals h2{
+   width: 100%;
+   font-size: 30px;
+   font-weight: bold;
+}
+.cart-totals p{
+   font-size: 18px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.cart-totals p span{
+   color:#9F9F9F;
+}
+.cart-totals p strong{
+   color:#B88E2F;
+}
+.cart-totals button{
+   padding: 0 20%;
+   background-color: transparent;
+   color: black;
+   font-size: 20px;
+   border: 2px solid black;
+   border-radius:10px;
+   cursor: pointer;
+}
+/* end Card section */
+/* start feature */
+.features {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+   gap: 20px;
+   background-color: #F9F1E7;
+}
+.features i{
+   font-size: 40px;
+}
+.feature{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   gap: 10px;
+}
+.feature .adv h3{
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.feature .adv p{
+   font-size: 16px;
+   color: #9F9F9F;
+}
+/* end feature */
+/* start footer */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 40px 80px;
+      border-top: 2px solid purple;
+      background: #fff;
+      gap: 20px;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-help,
+    .footer-newsletter {
+      min-width: 200px;
+      margin-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 18px;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+    }
+
+    .footer-newsletter form {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-newsletter input {
+      border: none;
+      border-bottom: 1px solid gray;
+      padding: 6px;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .footer-newsletter button {
+      border: none;
+      background: transparent;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+/* end footer */
+hr {
+   border: none;
+   border-top: 1px solid #ccc;
+   margin: 20px 0;
+}
+.copyright {
+   font-size: 14px;
+   color: #666;
+   margin-bottom: 20px;
+}
