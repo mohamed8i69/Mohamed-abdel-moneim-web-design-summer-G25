@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+header nav{
+    background-color:#000000;
+    padding: 0 5% 0 10%;
+    height: 60px;
+    text-align: center;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 70px;
+}
+header nav .logo span{
+    color: #e27c32;
+    font-weight: lighter;
+}
+header nav .logo,
+header nav ul ,
+header nav ul li{
+  display: inline-block;
+  vertical-align: middle;
+}
+header nav ul{
+    list-style: none;
+    margin-left: 56%;
+    width:32%;
+    max-width: 400px;
+    white-space: nowrap;  
+    text-align: right;
+}
+header nav ul li{
+    padding: 2%;
+}
+header nav ul li a{
+    color: #a6a6a6;
+    text-decoration: none;
+    font-size: 14px;
+}
+.slider{
+    width: 100%;
+    background-image: url(../pictures/skyscraper-facade-modern-contemporary-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8%;
+    height: calc(100vh - 60px);
+}
+.slider .content{
+    /* text-align: center; */
+    color: #fff;
+    padding-right: 5%;
+   
+}
+.slider .content h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+.slider .content h1 >span{
+    display: block;
+    text-align: left;
+    padding-left:10px;
+    font-size: 40px;
+}
+.slider .content h1 >span span{
+    color: #e27c32;
+    font-weight: lighter;
+    font-size: 40px;
+
+}
+.slider .content hr{
+    width:60px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-bottom:30px;
+}
+.slider .content p{
+    text-align: left;
+    line-height: 1.6;
+    font-size: 14px;
+    color:#a6a6a6;
+    margin-bottom: 20px;
+}
+.slider .content button{
+    background-color: transparent;
+    color: white;
+    border:2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin-top: 10px;
+}
+.slider .content,
+.slider .form{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* end content */
+ /*start form */
+.slider .form form{
+    background-color: #fefefe;
+    text-align: center;
+}
+.slider .form form{
+    max-width: 500px;
+    min-width: 300px;
+    border: none;      
+    border-radius: 10px;    
+    margin: 0 auto;    
+    overflow: hidden;
+}
+.slider .form h2 {
+    background-color: #eee;
+    font-size: 20px;
+    padding: 10px;
+    word-spacing: 2px;   
+}
+.slider .form h2 span {
+    color: #e27c32;
+    text-transform: uppercase;
+}
+form input {
+    border: 1px solid transparent;
+    border-bottom:1px solid #000000;
+    padding: 15px;
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+}
+.form button {
+    background-color: #ff9b51;
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin-top: 10px;   
+}
