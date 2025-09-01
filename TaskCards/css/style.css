@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+.card-img {
+    position: relative;
+}
+.card-img img{
+    width: 100%;
+    display: block;
+}
+.card .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2 ;
+
+}
+.card .over-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+
+}
+.card .over-lay a{
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.card:hover .over-lay{
+    opacity: 1;
+}
+.card .card-header span {
+    margin: 0 10px;
+}
+.card-img .photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    position: absolute;
+    bottom: -25px;
+    right: 10px;
+    border: 3px solid white;
+
+}
+.card h2 {
+    font-size: 24px;
+    margin: 15px 0; 
+}
+.card p {
+    font-size: 16px;
+    margin: 0 10px 15px 10px;
+    color: #555;
+    line-height: 1.5;
+}
+.card .caption{
+    padding: 0 10px;
+}
+.card hr{
+    width: 20%;
+    border: 2px solid #1925c5;
+    border-radius: 20px;
+    margin: 10px 0;
+}
