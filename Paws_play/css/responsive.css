@@ -1,0 +1,103 @@
+@media (max-width: 575.98px) {
+     .banner{
+        background-position: left;
+        background-size: 170% 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+     }
+    .banner nav  ul,nav .btn{
+        display: none;
+    }
+    .banner nav .content{
+         justify-content: space-between;
+         width: 100%;
+    }
+    .banner nav:hover ul{
+        display: block;
+        position: absolute;
+        top: 6%;
+        left: 80%;
+    }
+    .banner nav .logo{
+        display: flex;
+    }
+    .banner .hero-section{
+        width: 70%;
+    }
+    .hero-section h1{
+        font-size: 7vw;
+    }
+    .hero-section p{
+        font-size: 18px;
+    }
+    /* shop */
+    .shop .slider ul{
+        width: 90%;
+    }
+    .slider ul:nth-child(3){
+        flex-direction:column ;
+        width: 100%;
+    }
+    .shop .slider .cards li{
+        width: 100%;
+    }
+    .shop .slider .cards li:last-child{
+        display: none;
+    }
+    /* services */
+    .services .container .slider{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+.services .slider .row-4 {
+    width: 100%;
+}
+    .services .slider .row{
+        width: 100%;
+    }
+    .services .slider .row .card img {
+        height: 100%;
+    }
+    /* about section */
+    .about .container .about-content .text-about{
+        width: 100%;
+    }
+    .about .about-content .box-image{
+        display: none;
+    }
+    /* services section */
+    .Team .container .cards{
+        flex-wrap: wrap;
+    }
+    .Team .container .cards .card{
+        width: 47%;
+    }
+    /* blog section */
+    .blog .content .Image{
+        display: none;
+    }
+  .blog .container .content .caption{
+        width: 100%;
+    }
+    /* contact section */
+    .contact .contact-section{
+        flex-direction: column-reverse;
+
+    }
+    .contact .contact-section .contact-form, .contact .contact-section .contact-info{
+        width: 100%;
+    }
+    .contact-section .contact-info p{
+        white-space: initial;
+
+    }
+    .contact .newsletter{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact .newsletter input,.contact .newsletter .btn{
+        width: 100%;
+        margin-bottom:10px ;
+    }
+ }
