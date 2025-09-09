@@ -56,7 +56,7 @@ console.log(users)
 function deleteUserById() {
     var id = prompt("enter Id of user deleted ")
     var ind = users.findIndex(e => e.id == id);
-    if (ind !== -1) {
+    if (ind != -1) {
         users.splice(ind, 1);
         console.log(`User with id ${id} deleted successfully`);
     } else {
