@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a,
+i {
+  text-decoration: none !important;
+}
+
+.style-p {
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #908d8d;
+}
+
+nav.custom-position {
+  position: absolute;
+  top: 38%;
+  bottom: 0;
+}
+
+ul.list-group-flush {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.-margin {
+  margin-top: -375px;
+  background-color: #ddcfb8 !important;
+}
+
+.carousel-caption {
+
+  top: 8.25rem;
+  left: 25%;
+}
+
+.img-zoom {
+  overflow: hidden;
+  /* يخلي الصورة ما تطلعش برا الكارد */
+}
+
+.img-zoom img {
+  transition: transform 0.5s ease;
+  /* وقت وسلاسة الحركة */
+}
+
+.img-zoom:hover img {
+  transform: scale(1.1);
+  /* تكبير 10% عند المرور */
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #a1331b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #a1331b;
+  font-size: 20px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.circle.active {
+  background-color: #a1331b;
+  color: #fff;
+}
+
+.background-text {
+  font-size: 130px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+.circles-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.circle:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.circles-container:hover~.background-text {
+  transform: translate(-50%, -60%);
+
+}
+.card ul{
+  display: none;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+
+  box-shadow: 1px 2px 4px 3px rgba(0,0,0,0.18); 
+}
+.card:hover ul{
+  display: block;
+}
+.fa-angle-right,.fa-angle-left{
+  display: none;
+}
+.owl-carousel:hover .fa-angle-left,.owl-carousel:hover .fa-angle-right{
+  display: block;
+}

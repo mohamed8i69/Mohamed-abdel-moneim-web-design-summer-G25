@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merto Shop</title>
+    <link rel="stylesheet" href="css\fontawesome-free-7.0.0-web\css\all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header" class="py-2 bg-white w-100  " style="z-index:100">
+        <div class="container-fluid">
+            <div id="topBar" class="d-flex justify-content-between align-items-center d-none d-md-flex mx-3 fs-6"
+                style="font-size: 0.9rem !important;">
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Language -->
+                    <div class="dropdown">
+                        <a class=" dropdown-toggle d-flex align-items-center text-decoration-none text-dark" href="#"
+                            role="button" data-bs-toggle="dropdown">
+                            <img src="https://flagcdn.com/w20/us.png" alt="English" class="me-1 "> English
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/us.png"
+                                        alt="English" class="me-1"> English</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/es.png"
+                                        alt="English" class="me-1">Español</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/fr.png"
+                                        alt="English" class="me-1">Français</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/pt.png"
+                                        alt="English" class="me-1">Português</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            USD
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-decoration-none" href="#">USD</a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="#">EUR</a></li>
+                        </ul>
+                    </div>
+
+
+                    <ul class="list-unstyled d-flex mb-0 gap-3 border-start px-2 d-none d-lg-flex ">
+                        <li><a class="text-decoration-none text-dark" href="#">Track Order</a></li>
+                        <li><a class="text-decoration-none text-dark" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none text-dark" href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+
+                    <div class="d-flex gap-2 px-2 border-end">
+                        <a><i class="fa-brands fa-facebook-f"></i></a>
+                        <a><i class="fa-brands fa-tiktok"></i></a>
+                        <a><i class="fa-brands fa-youtube"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+
+                    <div class="contact-info">
+                        <a class="text-decoration-none text-dark" href="#">Contact us <span>24/7</span></a>
+                        <span class="ms-2 fw-bold text-danger">(+92) 3942 7879</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg py-3 col-12 ">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand ms-3" href="#"><img src="pictures/logo-furniture.png" alt="logo furniture"
+                            style="width: 35%;"></a>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse flex-wrap" id="navbarScroll">
+
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll w-75">
+                            <li class="nav-item bg-light  rounded p-1 w-100">
+                                <div class="input-group p-1 ">
+                                    <select name="term"
+                                        class="form-select form-select bg-light border-0 border-end border-1">
+                                        <option selected value="">All Categories</option>
+                                        <option value="autopart">Autopart</option>
+                                        <option value="accessories-automotive">&nbsp;&nbsp;&nbsp;Accessories</option>
+                                        <option value="car-care">&nbsp;&nbsp;&nbsp;Car Care</option>
+                                        <option value="car-electronics">&nbsp;&nbsp;&nbsp;Car Electronics</option>
+                                        <option value="equipment">&nbsp;&nbsp;&nbsp;Equipment</option>
+                                        <option value="lights">&nbsp;&nbsp;&nbsp;Lights</option>
+                                        <option value="oils-fluids">&nbsp;&nbsp;&nbsp;Oils &amp; Fluids</option>
+                                        <option value="tires">&nbsp;&nbsp;&nbsp;Tires</option>
+                                        <option value="wheels">&nbsp;&nbsp;&nbsp;Wheels</option>
+                                        <option value="beauty-health">Beauty &amp; Health</option>
+                                        <option value="bags-cases">&nbsp;&nbsp;&nbsp;Bags &amp; Cases</option>
+                                        <option value="bb-creams">&nbsp;&nbsp;&nbsp;BB Creams</option>
+                                        <option value="body-bath">&nbsp;&nbsp;&nbsp;Body &amp; Bath</option>
+                                        <option value="brushes-tools">&nbsp;&nbsp;&nbsp;Brushes &amp; Tools</option>
+                                        <option value="hair-care">&nbsp;&nbsp;&nbsp;Hair Care</option>
+                                        <option value="lipstick">&nbsp;&nbsp;&nbsp;Lipstick</option>
+                                        <option value="makeup">&nbsp;&nbsp;&nbsp;Makeup</option>
+                                        <option value="makeup-palettes">&nbsp;&nbsp;&nbsp;Makeup Palettes</option>
+                                        <option value="mascara">&nbsp;&nbsp;&nbsp;Mascara</option>
+                                        <option value="mask">&nbsp;&nbsp;&nbsp;Mask</option>
+                                        <option value="nail-care">&nbsp;&nbsp;&nbsp;Nail Care</option>
+                                        <option value="skincare">&nbsp;&nbsp;&nbsp;Skincare</option>
+                                        <option value="toner">&nbsp;&nbsp;&nbsp;Toner</option>
+                                        <option value="electronic">Electronic</option>
+                                        <option value="product-cat-apple">&nbsp;&nbsp;&nbsp;Apple</option>
+                                        <option value="camera">&nbsp;&nbsp;&nbsp;Camera</option>
+                                        <option value="controller">&nbsp;&nbsp;&nbsp;Controller</option>
+                                        <option value="headphones">&nbsp;&nbsp;&nbsp;Headphones</option>
+                                        <option value="smartwatch">&nbsp;&nbsp;&nbsp;Smartwatch</option>
+                                        <option value="speaker">&nbsp;&nbsp;&nbsp;Speaker</option>
+                                        <option value="fashion">Fashion</option>
+                                        <option value="men">&nbsp;&nbsp;&nbsp;Men</option>
+                                        <option value="men-accessories">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                                        </option>
+                                        <option value="hoodies">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoodies</option>
+                                        <option value="jackets-coats">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets &amp;
+                                            Coats</option>
+                                        <option value="polo-shirts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polo shirts
+                                        </option>
+                                        <option value="shirts-men">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts</option>
+                                        <option value="shoes-men">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes</option>
+                                        <option value="women">&nbsp;&nbsp;&nbsp;Women</option>
+                                        <option value="women-accessories">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories</option>
+                                        <option value="dress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dress</option>
+                                        <option value="shirts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts</option>
+                                        <option value="shoes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes</option>
+                                        <option value="shorts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shorts</option>
+                                        <option value="skirts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skirts</option>
+                                        <option value="tops">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tops</option>
+                                        <option value="game-accessories">Game Accessories</option>
+                                        <option value="home-decor">Home &amp; Decor</option>
+                                        <option value="beds">&nbsp;&nbsp;&nbsp;Beds</option>
+                                        <option value="bookcase">&nbsp;&nbsp;&nbsp;Bookcase</option>
+                                        <option value="cabinets">&nbsp;&nbsp;&nbsp;Cabinets</option>
+                                        <option value="chairs">&nbsp;&nbsp;&nbsp;Chairs</option>
+                                        <option value="fireplaces">&nbsp;&nbsp;&nbsp;Fireplaces</option>
+                                        <option value="lighting">&nbsp;&nbsp;&nbsp;Lighting</option>
+                                        <option value="mirrors-clocks">&nbsp;&nbsp;&nbsp;Mirrors &amp; Clocks</option>
+                                        <option value="office-furniture">&nbsp;&nbsp;&nbsp;Office Furniture</option>
+                                        <option value="outdoor">&nbsp;&nbsp;&nbsp;Outdoor</option>
+                                        <option value="rugs">&nbsp;&nbsp;&nbsp;Rugs</option>
+                                        <option value="sectionals">&nbsp;&nbsp;&nbsp;Sectionals</option>
+                                        <option value="sofas">&nbsp;&nbsp;&nbsp;Sofas</option>
+                                        <option value="tables">&nbsp;&nbsp;&nbsp;Tables</option>
+                                        <option value="wall-decor">&nbsp;&nbsp;&nbsp;Wall Decor</option>
+                                        <option value="laptop-computer">Laptop &amp; Computer</option>
+                                        <option value="computer">&nbsp;&nbsp;&nbsp;Computer</option>
+                                        <option value="all-in-one">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All in One
+                                        </option>
+                                        <option value="laptop">&nbsp;&nbsp;&nbsp;Laptop</option>
+                                        <option value="macbook">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macbook</option>
+                                        <option value="msi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSI</option>
+                                        <option value="phone-tablet">Phone &amp; Tablet</option>
+                                        <option value="tablet-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                                        <option value="apple">&nbsp;&nbsp;&nbsp;Apple</option>
+                                        <option value="huawei">&nbsp;&nbsp;&nbsp;Huawei</option>
+                                        <option value="oppo">&nbsp;&nbsp;&nbsp;Oppo</option>
+                                        <option value="realme">&nbsp;&nbsp;&nbsp;Realme</option>
+                                        <option value="samsung">&nbsp;&nbsp;&nbsp;Samsung</option>
+                                        <option value="smartphone">&nbsp;&nbsp;&nbsp;Smartphone</option>
+                                        <option value="tablet">&nbsp;&nbsp;&nbsp;Tablet</option>
+                                        <option value="xiaomi">&nbsp;&nbsp;&nbsp;Xiaomi</option>
+                                        <option value="tv-audio-video">TV, Audio - Video</option>
+                                    </select>
+                                    <input type="text" class="form-control bg-light border-0 border-start border-1"
+                                        placeholder="Search for products">
+                                    <button class="btn btn-danger rounded" type="button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll justify-content-end w-25">
+
+                            <li class="nav-item me-3 fs-5 position-relative">
+                                <i class="fa-regular fa-user"></i> Account
+                            </li>
+
+
+                            <li class="nav-item me-3 fs-4 position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width:20px; height:20px; font-size:12px;">
+                                    0
+                                </span>
+                            </li>
+
+                            <li class="nav-item me-3 fs-4 position-relative">
+                                <img src="pictures/shopping-cart.svg" alt="shopping" style="width: 24px; height: 24px;">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width:20px; height:20px; font-size:12px;">
+                                    0
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Shop by Categories -->
+            </nav>
+            <nav class="nav d-flex gap-5 justify-content-start py-2  align-items-start">
+
+                <ul id="middleBar"
+                    class="list-group list-group-flush col-3 mt-2 ms-4 rounded overflow-hidden border shadow-sm">
+                    <div
+                        class="categories-menu d-flex justify-content-between align-items-center bg-danger px-3 py-3 text-white ">
+                        <span>SHOP BY CATEGORIES</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <li class="list-group-item"><i class="fa-solid fa-couch"></i> Living Room</li>
+                    <li class="list-group-item"><i class="fa-solid fa-bed"></i> Bedroom</li>
+                    <li class="list-group-item"><i class="fa-solid fa-chair"></i> Dining Room</li>
+                    <li class="list-group-item"><i class="fa-solid fa-bath"></i> Bathroom</li>
+                    <li class="list-group-item"><i class="fa-solid fa-utensils"></i> Kitchen Room</li>
+                    <li class="list-group-item"><i class="fa-solid fa-briefcase"></i> Home Office</li>
+                    <li class="list-group-item"><i class="fa-solid fa-lamp"></i> Home Decoration</li>
+                    <li class="list-group-item"><i class="fa-solid fa-tree"></i> Outdoor</li>
+                    <li class="list-group-item text-danger fw-bold "><i class="fa-solid fa-tags"></i> Sale Off</li>
+                </ul>
+                <div class="d-flex ">
+                    <a class="nav-link active dropdown-toggle text-black" aria-current="page" href="#">Home</a>
+                    <a class="nav-link dropdown-toggle text-black" href="#">shop</a>
+                    <a class="nav-link dropdown-toggle text-black" href="#">Products</a>
+                    <a class="nav-link dropdown-toggle text-black" href="#">Pages</a>
+                    <a class="nav-link text-black" href="#">Blog</a>
+                    <a class="nav-link text-black" href="#">About us</a>
+                </div>
+                <div class="dropdown-toggle align-center mt-2">
+                    <a>Recently viewed</a>
+                </div>
+            </nav>
+            <nav id="bottomBar" class="bg-danger -margin">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active  round"
+                            style="width: 10px;height: 10px; border-radius:50%;" aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            style="width: 10px;height: 10px; border-radius:50%;" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            style="width: 10px;height: 10px; border-radius:50%;" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pictures/slide1-demo3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block ms-4 d-inline-block w-25">
+                                <h2 class="fs-2">Best Seller Sofa & Chair Livingroom</h2>
+                                <button class="btn btn-outline-dark">SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pictures/slide2-demo3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block ms-4 d-inline-block w-25">
+                                <h2 class="fs-2">Full Bed & Upholstered Headboard</h2>
+                                <button class="btn btn-outline-dark">SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pictures/slide3-demo3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block ms-4 d-inline-block w-25">
+                                <h2 class="fs-2">Modern Dining Set For Kitchen</h2>
+                                <button class="btn btn-outline-dark">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <button id="backToTop" class="btn btn-danger rounded-circle shadow d-flex align-items-center justify-content-center"
+        style="width: 45px; height: 45px; position: fixed; bottom: 30px; right: 30px; display: none; z-index: 1050;">
+        <i class="fa-solid fa-arrow-up text-white"></i>
+    </button>
+    <section class="container my-5">
+        <div class="row">
+
+
+            <div class="col-6 col-md-3 mb-4">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa-solid fa-truck fs-2 text-secondary me-2"></i>
+                    <div>
+                        <h3 class="h5 fw-bold">High Quality</h3>
+                        <p class="text-muted text-start">crafted from top materials</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-md-3 mb-4">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa-regular fa-clock fs-2 text-secondary me-2"></i>
+                    <div>
+                        <h3 class="h5 fw-bold">Warranty Protection</h3>
+                        <p class="text-muted text-start">Over 2 years</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-md-3 mb-4">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa-solid fa-tag fs-2 text-secondary me-2"></i>
+                    <div>
+                        <h3 class="h5 fw-bold">Free Shipping</h3>
+                        <p class="text-muted">Order over 150 $</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-md-3 mb-4">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa-regular fa-heart fs-2 text-secondary me-2"></i>
+                    <div>
+                        <h3 class="h5 fw-bold">24 / 7 Support</h3>
+                        <p class="text-muted">Dedicated support</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="container">
+        <div class=" owl-carousel">
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-6-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-33%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">14-inch
+                            Fasion Simplicity Quality Wall Clock, Home </a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2 ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-3-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-20%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">Studio Designs Home, Heather Studio Designs Chair</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-5-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-48%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">Mid Century Modern Round Dining Table in Oak</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/196-300x300.jpg" class="card-img-top " alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-secondary opacity-75 bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white fw-bold small">SOLD
+                            OUT</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">High seating comfort with built in armrest</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-29-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white ">-26%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">Slate Table Lamp with Natural Slate Finish</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3 ">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-6-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-33%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">14-inch
+                            Fasion Simplicity Quality Wall Clock, Home</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2 ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-3-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-20%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">Studio Designs Home, Heather Studio Designs Chair</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-5-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-48%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">Mid Century Modern Round Dining Table in Oak</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/196-300x300.jpg" class="card-img-top " alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-secondary opacity-75 bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white fw-bold small">SOLD
+                            OUT</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">High seating comfort with built in armrest</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="pictures/furniture-29-300x300.jpg" class="card-img-top" alt="...">
+                        <ul class="position-absolute top-0 end-0  p-0 my-2">
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="wishList">
+                                    <i class="bi bi-heart"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="compare">
+
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Quick view">
+
+                                    <i class="bi bi-search"></i>
+                                </button></li>
+                            <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Read more">
+
+                                    <i class="bi bi-cart"></i>
+                                </button></li>
+                        </ul>
+                        <span
+                            class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white ">-26%</span>
+                    </div>
+                    <div class="card-body">
+
+                        <a class="card-title">Slate Table Lamp with Natural Slate Finish</a>
+                        <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pb-2  ps-3 ">
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-solid fa-star  fs-5"></i>
+                            <i class="fa-regular fa-star fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container my-4">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="position-relative h-100 img-zoom">
+                        <img src="pictures/banner1-demo3.jpg" class="w-100 h-100" alt="couch"
+                            style="object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 p-4 text-white">
+                            <p class="text-uppercase mb-2">Design by Cozy</p>
+                            <h2 class="fw-bold">Modern Mini Couch</h2>
+                            <p>51 Inches Loveseat Sofa</p>
+                            <a href="#" class="btn btn-outline-light mt-3">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- يمين -->
+                <div class="col-lg-6">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="position-relative img-zoom">
+                                <img src="pictures/banner2-demo3.jpg" class="w-100" alt="plant"
+                                    style="object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 p-4 text-dark">
+                                    <h3 class="fw-bold">Plant Pots Only $14.00</h3>
+                                    <p class="text-muted">Don’t miss the opportunity...</p>
+                                    <a href="#" class="btn btn-outline-dark">Shop Now</a>
+                                </div>
+                                <span
+                                    class="position-absolute bg-danger text-white rounded-circle m-2 translate-middle d-flex justify-content-center align-items-center pm-1"
+                                    style="width: 60px; height: 60px; vertical-align:middle;top:45%; right:10%; ">
+                                    -30%
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- أسفل -->
+                        <div class="col-12">
+                            <div class="position-relative img-zoom">
+                                <img src="pictures/banner3-demo3.jpg" class="w-100" alt="lamp"
+                                    style="object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 p-4 text-dark">
+                                    <p class="text-uppercase mb-1">New Arrivals</p>
+                                    <h2 class="fw-bold">Romina Table Lamp</h2>
+                                    <p>Creates gentle elegance</p>
+                                    <a href="#" class="btn btn-outline-dark">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+
+    </style>
+    <div class="container py-5 position-relative text-center my-5">
+
+        <!-- النص الخلفي -->
+        <div class="background-text position-absolute  start-50 translate-middle fw-bold opacity-50 display-1 user-select-none"
+            style="top:80%;">
+            SALE OFF
+        </div>
+
+        <h3 class="fw-bold mb-5 position-relative">Cyber Weekend</h3>
+
+        <!-- الدوائر -->
+        <div class="d-flex justify-content-center gap-4 flex-wrap circles-container position-relative">
+            <div
+                class="circle border border-2 border-danger rounded-circle d-flex flex-column justify-content-center align-items-center fw-bold text-danger">
+                +10% <br> OFF
+            </div>
+            <div
+                class="circle border border-2 border-danger rounded-circle d-flex flex-column justify-content-center align-items-center fw-bold text-danger">
+                +20% <br> OFF
+            </div>
+            <div
+                class="circle border border-2 border-danger rounded-circle d-flex flex-column justify-content-center align-items-center fw-bold text-danger">
+                +30% <br> OFF
+            </div>
+            <div
+                class="circle border border-2 border-danger rounded-circle d-flex flex-column justify-content-center align-items-center fw-bold text-danger">
+                +40% <br> OFF
+            </div>
+            <div
+                class="circle bg-danger rounded-circle d-flex flex-column justify-content-center align-items-center fw-bold text-white">
+                +50% <br> OFF
+            </div>
+        </div>
+    </div>
+    <section class="container my-5">
+        <h2 class="text-center mb-5">New Arrivals</h2>
+        <div class="row g-3">
+
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-6-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-33%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">14-inch
+                        Fasion Simplicity Quality Wall Clock, Home Decor</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2 ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-3-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-20%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">Studio Designs Home, Heather Studio Designs Chair</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2  ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-5-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-48%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">Mid Century Modern Round Dining Table in Oak</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2  ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/196-300x300.jpg" class="card-img-top " alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-secondary opacity-75 bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white fw-bold small">SOLD
+                        OUT</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">High seating comfort with built in armrest</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2  ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-29-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white ">-26%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">Slate Table Lamp with Natural Slate Finish</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2  ps-3 ">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-6-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-33%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">14-inch
+                        Fasion Simplicity Quality Wall Clock, Home Decor</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2 ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-3-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-20%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">Studio Designs Home, Heather Studio Designs Chair</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2  ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="position-relative">
+                    <img src="pictures/furniture-5-300x300.jpg" class="card-img-top" alt="...">
+                    <ul class="position-absolute top-0 end-0  p-0 my-2">
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="wishList">
+                                <i class="bi bi-heart"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="compare">
+
+                                <i class="bi bi-arrow-left-right"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Quick view">
+
+                                <i class="bi bi-search"></i>
+                            </button></li>
+                        <li><button type="button" class="btn btn-light me-2 mb-1 " data-bs-toggle="tooltip"
+                                data-bs-placement="left" title="Read more">
+
+                                <i class="bi bi-cart"></i>
+                            </button></li>
+                    </ul>
+                    <span
+                        class=" bg-danger bg-gradient rounded position-absolute top-0 start-0 px-2 py-1 m-2 text-white">-48%</span>
+                </div>
+                <div class="card-body">
+
+                    <a class="card-title">Mid Century Modern Round Dining Table in Oak</a>
+                    <span class="d-block fw-bold">$100 <s class="fw-light text-muted"> $120</s></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center pb-2  ps-3">
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-solid fa-star  fs-5"></i>
+                        <i class="fa-regular fa-star fs-5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-4">
+        <h2 class="text-center mb-4">Shop by Department</h2>
+        <div class="row g-3">
+            <div class="card col-3 border-0">
+                <img src="pictures/image-box-1.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="fs-5">Coffee Table from $20</h3>
+                    <a>Shop now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card col-3 border-0">
+                <img src="pictures/image-box-2.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="fs-5">Coffee Table from $20</h3>
+                    <a>Shop now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card col-3 border-0">
+                <img src="pictures/image-box-3.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="fs-5">Coffee Table from $20</h3>
+                    <a>Shop now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card col-3 border-0">
+                <img src="pictures/image-box-4.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body text-center">
+                    <h3 class="fs-5">Coffee Table from $20</h3>
+                    <a>Shop now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5 w-75 text-center mx-auto">
+    </section>
+    <section class="container">
+        <div class="row g-3">
+            <img src="pictures/furniture-brand-1.jpg" alt="" class="rounded-circle col-2">
+            <img src="pictures/furniture-brand-3.jpg" alt="" class="rounded-circle col-2">
+            <img src="pictures/furniture-brand-4.jpg" alt="" class="rounded-circle col-2">
+            <img src="pictures/furniture-brand-5.jpg" alt="" class="rounded-circle col-2">
+            <img src="pictures/furniture-brand-2-200x80.jpg" alt="" class="rounded-circle col-2">
+            <img src="pictures/furniture-brand-6.jpg" alt="" class="rounded-circle col-2">
+        </div>
+    </section>
+    <footer class="bg-light pt-5">
+        <div class="container">
+            <!-- Newsletter -->
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h4 class="fw-bold">Join our newsletter</h4>
+                    <p class="text-muted">Get recommendations, tips, updates, promotions and more.</p>
+                    <div class="input-group input-group-lg mx-auto" style="max-width: 600px;">
+                        <input type="email" class="form-control border-0" placeholder="enter your email address">
+                        <button class="btn bg-white" type="button">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="row text-start">
+                <!-- Logo & Contact -->
+                <div class="col-md-3 mb-4">
+                    <h3 class="fw-bold"><img src="pictures/logo-furniture.png" class="w-50 mb-3" alt=""></h3>
+                    <p class="text-muted mb-1">
+                        <i class="bi bi-geo-alt"></i> 29 SE 2nd Ave, Miami <br> Florida 33131, United States
+                    </p>
+                    <p class="text-muted mb-1"><i class="bi bi-envelope"></i> info@example.com</p>
+                    <p class="fw-bold">(+92) 3942 7879</p>
+                </div>
+
+                <!-- Shop More -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">SHOP MORE</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">New Arrival</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Sale off</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Living Room</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Bedroom</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Dinner Room</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Bathroom</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Kitchen Room</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Home Office</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Home Decoration</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Outdoor</a></li>
+                    </ul>
+                </div>
+
+                <!-- Shopping -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">SHOPPING</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Wishlist</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Shop by Brand</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Offers</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Track order</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">INFORMATION</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Track Order</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">About us</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Help</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Account -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">ACCOUNT</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Cart</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">My account</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">My orders</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Wishlist</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Affiliate Program</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <hr>
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0 text-muted">© 2024 Merto. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/owl.carousel.min.js"></script>
+
+    <script src="Js/script.js"></script>
+</body>
+
+</html>
